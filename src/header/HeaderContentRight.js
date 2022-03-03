@@ -11,8 +11,9 @@ const HeaderContentContainer = styled.div`
     color: white;
     font-size: 11pt;
     font-weight: 500;
-    float: left;
+    float: right;
     padding-top:15px;
+    width:450px;
 `
 const CTAText = styled.a`
     text-decoration: none;
