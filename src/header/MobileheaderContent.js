@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import Logo from './Logo'
 
 const MobileHeaderContentContainer = styled.div`
-    flex: 1;
     position: relative;
     color: white;
     font-size: 11pt;
