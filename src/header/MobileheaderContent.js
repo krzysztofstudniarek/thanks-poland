@@ -6,8 +6,9 @@ const MobileHeaderContentContainer = styled.div`
     color: white;
     font-size: 11pt;
     font-weight: 500;
-    text-align: center;
+    text-align: right;
     padding: 10px;
+    background-color:black;
 `
 
 const MobileHeaderContent = () => {
