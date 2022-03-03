@@ -3,6 +3,9 @@ import styled from 'styled-components'
 
 import HeaderContentLeft from './HeaderContentLeft'
 import HeaderContentRight from './HeaderContentRight'
+import MobileHeaderContent from './MobileheaderContent'
+
+import {isMobile} from 'react-device-detect';
 
 const Background = styled.div`
     width: 100%;
@@ -13,8 +16,9 @@ const Background = styled.div`
 const Header = () => {
     return(
         <Background>
-            <HeaderContentLeft></HeaderContentLeft>
-            <HeaderContentRight></HeaderContentRight>
+            {!isMobile && <HeaderContentLeft></HeaderContentLeft> }
+            {!isMobile && <HeaderContentRight></HeaderContentRight>}
+            {isMobile && <MobileHeaderContent></MobileHeaderContent>}
         </Background>
     )
 }

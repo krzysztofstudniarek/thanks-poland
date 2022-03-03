@@ -3,23 +3,22 @@ import styled from 'styled-components'
 
 import Logo from './Logo'
 
-const HeaderContentContainer = styled.div`
+const MobileHeaderContentContainer = styled.div`
     flex: 1;
-    position:relative; 
-    margin:auto;
-    margin-left:40px;
+    position: relative;
     color: white;
     font-size: 11pt;
     font-weight: 500;
-    padding-top:15px
+    text-align: center;
+    padding: 10px;
 `
 
-const HeaderContentLeft = () => {
+const MobileHeaderContent = () => {
     return(
-        <HeaderContentContainer>
+        <MobileHeaderContentContainer>
             Over <b>550,000</b> citizens from 125 countries have already found safety in Poland.
-        </HeaderContentContainer>
+        </MobileHeaderContentContainer>
     )
 }
 
-export default HeaderContentLeft;
+export default MobileHeaderContent;

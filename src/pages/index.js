@@ -4,8 +4,6 @@ import Layout from '../common/Layout'
 import Widget from '../widget/Widget'
 import Header from '../header/Header';
 
-import {isMobile} from 'react-device-detect';
-
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
@@ -20,7 +18,7 @@ const IndexPage = () => {
     <main>
       <GlobalStyle />
       <Layout pageTitle="Thank you Poland!">
-        {!isMobile && <Header></Header>}
+        <Header></Header>
         <Widget></Widget>
       </Layout>
     </main>
