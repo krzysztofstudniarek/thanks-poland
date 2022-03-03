@@ -1,17 +1,22 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import Logo from './Logo'
+import {isMobile} from 'react-device-detect';
 
 const HeaderContentContainer = styled.div`
     flex: 1;
     position:relative; 
     margin:auto;
     margin-left:40px;
+    margin-right:40px;
     color: white;
     font-size: 11pt;
     font-weight: 500;
-    padding-top:15px
+    ${!isMobile && `padding-top:15px`}
+    ${isMobile && `
+        padding-top:10px;
+        text-align: center;
+    `}    
 `
 
 const HeaderContentLeft = () => {
