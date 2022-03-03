@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import * as React from 'react'
 
 import {TwitterTweetEmbed} from 'react-twitter-embed'
-import TextContent from '../common/TextContent'
 import Spinner from 'reactjs-simple-spinner'
 
 const MentionsSectionContainter = styled.div`

@@ -8,20 +8,17 @@ const HeaderContentContainer = styled.div`
     position:relative;
     width: 1040px; 
     margin:auto;
-    height: 676px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left:10px;
     color: white;
-    font-weight: 1000;
-    font-size: 20px;
-    font-weight: 400;
-    padding-top:10px
+    font-size: 11pt;
+    font-weight: 500;
+    padding-top:15px
 `
 
 const HeaderContent = () => {
     return(
         <HeaderContentContainer>
-            #THANKSPOLAND
+            Over <b>550,000</b> citizens from 125 countries have already found safety in Poland.
         </HeaderContentContainer>
     )
 }
