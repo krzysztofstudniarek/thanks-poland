@@ -1,7 +1,8 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import HeaderContent from './HeaderContent'
+import HeaderContentLeft from './HeaderContentLeft'
+import HeaderContentRight from './HeaderContentRight'
 
 const Background = styled.div`
     width: 100%;
@@ -12,7 +13,8 @@ const Background = styled.div`
 const Header = () => {
     return(
         <Background>
-            <HeaderContent></HeaderContent>
+            <HeaderContentLeft></HeaderContentLeft>
+            <HeaderContentRight></HeaderContentRight>
         </Background>
     )
 }
