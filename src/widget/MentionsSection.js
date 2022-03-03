@@ -10,16 +10,10 @@ const MentionsSectionContainter = styled.div`
     padding: 10px;
 `
 const MentionsSection = (props) => {
-
-    let isLoaded = false;
-    
-    let onLoadFunc = () => {
-        isLoaded = true;
-    }
     return (
         <MentionsSectionContainter>
             {props.data.map((mention) => (
-                <TwitterTweetEmbed tweetId={mention} placeholder={<Spinner size="small"/>}>
+                <TwitterTweetEmbed tweetId={mention} onLoad={() => props.onLoad()}>
                 </TwitterTweetEmbed>
             ))}
         </MentionsSectionContainter>
