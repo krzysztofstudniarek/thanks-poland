@@ -10,31 +10,15 @@ const MentionsSectionContainter = styled.div`
     padding: 20px;
 `
 const MentionsSection = (props) => {
+    return (
+        <MentionsSectionContainter>
+            {props.data.map((mention) => (
+                <TwitterTweetEmbed tweetId={mention}>
 
-    const [mentions, setMentions] = useState(null);
-
-    useEffect(() => {
-        setMentions(props.data);
-    }, [])
-
-    if(mentions == null){
-        return (
-            <MentionsSectionContainter>
-                    LOADING MENTIONS...
-            </MentionsSectionContainter>
-        )
-    } 
-    else {
-        return (
-            <MentionsSectionContainter>
-                {mentions.map((mention) => (
-                    <TwitterTweetEmbed tweetId={mention}>
-
-                    </TwitterTweetEmbed>
-                ))}
-            </MentionsSectionContainter>
-        )
-    }
+                </TwitterTweetEmbed>
+            ))}
+        </MentionsSectionContainter>
+    )
 }
 
 export default MentionsSection;

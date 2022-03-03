@@ -11,7 +11,7 @@ const WidgetContainer = styled.div`
 const WidgetContent = styled.div`
     flex: 1;
     height:100px;
-    padding-top: 80px;
+    padding-top: 10px;
     padding-bottom: 80px;
     margin-left: 20px;
 `

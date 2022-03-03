@@ -17,8 +17,7 @@ const IndexPage = () => {
   return (
     <main>
       <GlobalStyle />
-      <Layout pageTitle="Demaskujemy Dezinformację">
-        <Header></Header>
+      <Layout pageTitle="Thank you Poland!">
         <Widget></Widget>
       </Layout>
     </main>
