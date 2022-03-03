@@ -11,12 +11,17 @@ const HeaderContentContainer = styled.div`
     height: 676px;
     margin-left: 200px;
     margin-right: 200px;
+    color: white;
+    font-weight: 1000;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top:10px
 `
 
 const HeaderContent = () => {
     return(
         <HeaderContentContainer>
-            <Logo></Logo>
+            #THANKSPOLAND
         </HeaderContentContainer>
     )
 }

@@ -7,8 +7,8 @@ const Background = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
-    height: 200px;
-    background-color: #0195d3;
+    height: 50px;
+    background-color: Black;
 `
 
 const Header = () => {

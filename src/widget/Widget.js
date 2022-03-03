@@ -2,6 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 import MentionsSection from './MentionsSection'
+import {isMobile} from 'react-device-detect';
 
 const WidgetContainer = styled.div`
     display: flex;
@@ -48,24 +49,39 @@ const Widget = () => {
                 '1498950821366714378',
                 '1498990250231836679',
                 '1498990348080754688'];
-
-    return(
-        <WidgetContainer>
-            <WidgetContent> 
-                <Row>
-                    <MentionsSection data = {data.slice(0,data.length/3)}>
+    if(isMobile){
+        return(
+            <WidgetContainer>
+                <WidgetContent> 
+                    <Row>
                         
-                    </MentionsSection>
-                    <MentionsSection data = {data.slice(data.length/3, 2*data.length/3)}>
+                        <MentionsSection data = {data}>
+                            
+                        </MentionsSection>
+                    </Row>
+                </WidgetContent>
+            </WidgetContainer>
+        )
+    }else{
+        return(
+            <WidgetContainer>
+                <WidgetContent> 
+                    <Row>
                         
-                    </MentionsSection>
-                    <MentionsSection data = {data.slice(2*data.length/3, data.length)}>
-                        
-                    </MentionsSection>
-                </Row>
-            </WidgetContent>
-        </WidgetContainer>
-    )
+                        <MentionsSection data = {data.slice(0,data.length/3)}>
+                            
+                        </MentionsSection>
+                        <MentionsSection data = {data.slice(data.length/3, 2*data.length/3)}>
+                            
+                        </MentionsSection>
+                        <MentionsSection data = {data.slice(2*data.length/3, data.length)}>
+                            
+                        </MentionsSection>
+                    </Row>
+                </WidgetContent>
+            </WidgetContainer>
+        )
+    }   
 }
 
 export default Widget;

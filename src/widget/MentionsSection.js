@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 import * as React from 'react'
-import {useState, useEffect}  from 'react'
 
 import {TwitterTweetEmbed} from 'react-twitter-embed'
 

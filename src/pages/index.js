@@ -1,8 +1,9 @@
 import * as React from 'react'
 
 import Layout from '../common/Layout'
-import Header from '../header/Header'
 import Widget from '../widget/Widget'
+
+import {isMobile} from 'react-device-detect';
 
 import { createGlobalStyle } from 'styled-components'
 
