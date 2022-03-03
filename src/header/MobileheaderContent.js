@@ -1,8 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import Logo from './Logo'
-
 const MobileHeaderContentContainer = styled.div`
     position: relative;
     color: white;
