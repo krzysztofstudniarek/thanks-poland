@@ -4,6 +4,7 @@ import * as React from 'react'
 
 import {TwitterTweetEmbed} from 'react-twitter-embed'
 import TextContent from '../common/TextContent'
+import Spinner from 'reactjs-simple-spinner'
 
 const MentionsSectionContainter = styled.div`
     flex: 2;
@@ -19,7 +20,7 @@ const MentionsSection = (props) => {
     return (
         <MentionsSectionContainter>
             {props.data.map((mention) => (
-                <TwitterTweetEmbed tweetId={mention} placeholder={<TextContent>Loading mnetion...</TextContent>}>
+                <TwitterTweetEmbed tweetId={mention} placeholder={<Spinner size="small"/>}>
                 </TwitterTweetEmbed>
             ))}
         </MentionsSectionContainter>

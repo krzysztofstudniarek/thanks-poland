@@ -20,6 +20,7 @@
     "react-device-detect": "^2.1.2",
     "react-dom": "^17.0.1",
     "react-twitter-embed": "^4.0.4",
+    "reactjs-simple-spinner": "^0.0.5",
     "styled-components": "^5.3.3"
   }
 }
