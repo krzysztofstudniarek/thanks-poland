@@ -11,6 +11,7 @@ const HeaderContentContainer = styled.div`
     font-size: 11pt;
     font-weight: 500;
     padding-top:15px;
+    padding-bottom: 15px;
 `
 
 const HeaderContentLeft = () => {
