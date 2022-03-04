@@ -5,7 +5,7 @@ import MentionsSection from './MentionsSection'
 import {isMobile} from 'react-device-detect';
 import Spinner from 'reactjs-simple-spinner'
 
-import {useState}  from 'react'
+import {useState, useEffect}  from 'react'
 
 const WidgetContainer = styled.div`
     display: flex;
@@ -29,32 +29,35 @@ const Row = styled.div`
 const Widget = () => {
 
     const [loadingState, setLoadingState] = useState(false);
-    const [data, setData] = useState(['1499022394123591680',
-                                    '1498121118925963269',
-                                    '1498406780438781961', 
-                                    '1498376044373745664',
-                                    '1498132512358367239', 
-                                    '1498007955437932548', 
-                                    '1498016897438203905', 
-                                    '1498494672246755328', 
-                                    '1498385680614920193', 
-                                    '1498589657772273665', 
-                                    '1497823658756415490',
-                                    '1498499715398307855',
-                                    '1498667266484879365',
-                                    '1498732280508035078',
-                                    '1498932783313563650',
-                                    '1498945910516158466',
-                                    '1498736382780395522',
-                                    '1498740340349538304',
-                                    '1497184598064832529',
-                                    '1498657946519146504',
-                                    '1498196569023303684',
-                                    '1498950821366714378']);
+    const [data, setData] = useState([]);
 
     const changeLoadingState = () => {
         setLoadingState(true);
     }
+
+    useEffect(() => {
+        fetch("https://63klz6b332.execute-api.us-east-2.amazonaws.com/default/thanks-poland",
+        {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+            .then(response => {
+                response.json().then(
+                    (data) => {
+                        var mentions = [];
+                        data.forEach((item) => {
+                            mentions.push(item['id']);
+                        });
+                        setData(mentions);
+                    }
+                )
+                .catch(error => {
+                    alert("Mieliśmy problem z pobraniem danych skontaktuj się z administratorem!");
+                    throw(error);
+                })
+            })
+    }, [])
 
     if(isMobile){
         return(
