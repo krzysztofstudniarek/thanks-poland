@@ -24,15 +24,14 @@ const Header = () => {
         return(
             <MobileBackground>
                 <HeaderContentLeft></HeaderContentLeft>
-                {!isMobile && <HeaderContentRight></HeaderContentRight>}
             </MobileBackground>
         )
     }else{
         return(
-            <MobileBackground>
+            <Background>
                 <HeaderContentLeft></HeaderContentLeft>
                 <HeaderContentRight></HeaderContentRight>
-            </MobileBackground>
+            </Background>
         )
     }
 
