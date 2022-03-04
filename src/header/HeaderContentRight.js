@@ -13,7 +13,7 @@ const HeaderContentContainer = styled.div`
     font-weight: 500;
     float: right;
     padding-top:15px;
-    width: 325px;
+    width: 375px;
 `
 const CTAText = styled.a`
     text-decoration: none;
@@ -30,7 +30,7 @@ const HeaderContentRight = () => {
         <HeaderContentContainer>
             <CTAText href="https://www.gov.pl/web/mswia-en/information-for-refugees-from-ukraine">
             <Logo></Logo>
-                <CTABold>Guidlines</CTABold> for refugees fleeing Ukraine
+                Official <CTABold>Guidlines</CTABold> for refugees fleeing Ukraine
             </CTAText>
         </HeaderContentContainer>
     )
