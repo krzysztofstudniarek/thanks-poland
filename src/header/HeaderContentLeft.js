@@ -32,7 +32,6 @@ const HeaderContentLeft = () => {
     useEffect(() => {
         const interval = setInterval(() => {
                 setRefugeesNo(() => updateRefugeesNo());
-                console.log("UPDATED");
             }, 2000);
     }, []);
 
