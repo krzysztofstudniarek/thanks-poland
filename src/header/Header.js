@@ -8,7 +8,9 @@ import {isMobile} from 'react-device-detect';
 
 const Background = styled.div`
     width: 100%;
-    height: 50px;
+    ${!isMobile && `height: 50px;`}
+    ${isMobile && `height: 65px;
+    text-align: center;`}
     background-color: #0195d3;
 `
 
