@@ -28,7 +28,8 @@ const Row = styled.div`
 const Widget = () => {
 
     const [loadingState, setLoadingState] = useState(false);
-    const [data, setData] = useState(['1498121118925963269',
+    const [data, setData] = useState(['1499022394123591680',
+                                    '1498121118925963269',
                                     '1498406780438781961', 
                                     '1498376044373745664',
                                     '1498132512358367239', 
