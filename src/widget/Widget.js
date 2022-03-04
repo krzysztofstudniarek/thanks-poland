@@ -10,6 +10,7 @@ import {useState}  from 'react'
 const WidgetContainer = styled.div`
     display: flex;
     width: 100%;
+    margin-top:80px;
 `
 
 const WidgetContent = styled.div`
@@ -35,7 +36,6 @@ const Widget = () => {
                                     '1498132512358367239', 
                                     '1498007955437932548', 
                                     '1498016897438203905', 
-                                    '1498655934452805635', 
                                     '1498494672246755328', 
                                     '1498385680614920193', 
                                     '1498589657772273665', 

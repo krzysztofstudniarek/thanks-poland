@@ -9,6 +9,7 @@ import {isMobile} from 'react-device-detect';
 const Background = styled.div`
     width: 100%;
     background-color: #0195d3;
+    position: fixed;
 `
 
 const Header = () => {
