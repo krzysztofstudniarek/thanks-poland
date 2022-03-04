@@ -21,6 +21,7 @@ const IndexPage = () => {
     <main>
       <Helmet>
         <title>Thank you Poland!</title>
+        <link rel="icon" type="image/x-icon" href="https://thanks-poland.s3.us-east-2.amazonaws.com/Ukraine-Flag-icon.png"/>
         <meta property="og:title" content="Thank you Poland!" />
         <meta property="og:description" content="Every day, tens of thousands of refugees from 125 countries find safety in Poland." />
         <meta property="og:image" content="https://thanks-poland.s3.us-east-2.amazonaws.com/image.png"/>
