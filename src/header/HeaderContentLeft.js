@@ -12,11 +12,7 @@ const HeaderContentContainer = styled.div`
     color: white;
     font-size: 11pt;
     font-weight: 500;
-    ${!isMobile && `padding-top:15px;`}
-    ${isMobile && `
-        padding-top:10px;
-        text-align: center;
-    `}    
+    padding-top:15px;
 `
 
 const HeaderContentLeft = () => {
