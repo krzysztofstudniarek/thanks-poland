@@ -45,7 +45,9 @@ const Widget = () => {
             .then(response => {
                 response.json().then(
                     (data) => {
-                        var mentions = [];
+                        var mentions = ['1499022394123591680',
+                                        '1498121118925963269',
+                                        '1498406780438781961'];
                         data.forEach((item) => {
                             mentions.push(item['id']);
                         });
