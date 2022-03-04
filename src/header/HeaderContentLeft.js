@@ -1,5 +1,8 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import moment from 'moment'
+
+import {useState}  from 'react'
 
 const HeaderContentContainer = styled.div`
     flex: 1;
@@ -15,9 +18,11 @@ const HeaderContentContainer = styled.div`
 `
 
 const HeaderContentLeft = () => {
+    const [refugeesNo] = useState(550000 + Math.floor(moment.duration(moment(new Date()).diff(moment("2022-03-03"))).asMinutes())*34);
+
     return(
         <HeaderContentContainer>
-            Over <b>550,000</b> citizens from 125 countries have already found safety in Poland.
+            Over <b>{refugeesNo.toLocaleString()}</b> citizens from 125 countries have already found safety in Poland.
         </HeaderContentContainer>
     )
 }
