@@ -56,7 +56,6 @@ const Widget = () => {
                                     '1498990348080754688']);
 
     const changeLoadingState = () => {
-        console.log("LOADED");
         setLoadingState(true);
     }
 
