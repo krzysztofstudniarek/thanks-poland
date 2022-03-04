@@ -14,23 +14,21 @@ const Background = styled.div`
 
 const MobileBackground = styled.div`
     width: 100%;
-    background-color: #0195d3;
     height: 65px;
     text-align: center;
+    background-color: #0195d3;
 `
 
 const Header = () => {
     if(isMobile){
         return(
             <MobileBackground>
-                Mobile Header
                 <HeaderContentLeft></HeaderContentLeft>
             </MobileBackground>
         )
     } else {
         return(
             <Background>
-                Desktop Header
                 <HeaderContentLeft></HeaderContentLeft>
                 <HeaderContentRight></HeaderContentRight>
             </Background>
