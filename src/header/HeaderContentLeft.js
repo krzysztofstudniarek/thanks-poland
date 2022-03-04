@@ -18,11 +18,18 @@ const HeaderContentContainer = styled.div`
 `
 
 const HeaderContentLeft = () => {
-    const [refugeesNo] = useState(550000 + Math.floor(moment.duration(moment(new Date()).diff(moment("2022-03-03"))).asMinutes())*34);
+    const calculateRefugeesNo = () => {
+        var baseNo = 550000;
+        var now = moment(new Date());
+        var start = moment("2022-03-03");
+        var duration = moment.duration(now.diff(start));
+        
+        return baseNo + Math.floor(duration.asMinutes())*34;
+    }
 
     return(
         <HeaderContentContainer>
-            Over <b>{refugeesNo.toLocaleString()}</b> citizens from 125 countries have already found safety in Poland.
+            Over <b>{calculateRefugeesNo().toLocaleString()}</b> citizens from 125 countries have already found safety in Poland.
         </HeaderContentContainer>
     )
 }
