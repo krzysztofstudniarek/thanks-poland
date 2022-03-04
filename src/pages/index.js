@@ -4,6 +4,8 @@ import Layout from '../common/Layout'
 import Widget from '../widget/Widget'
 import Header from '../header/Header';
 
+import { Helmet } from "react-helmet"
+
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
@@ -14,8 +16,16 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const IndexPage = () => {
+
   return (
     <main>
+      <Helmet>
+        <title>Thank you Poland!</title>
+        <meta property="og:title" content="Thank you Poland!" />
+        <meta property="og:description" content="Every day, tens of thousands of refugees from 125 countries find safety in Poland." />
+        <meta property="og:image" content="https://thanks-poland.s3.us-east-2.amazonaws.com/image.png"/>
+        <meta name="description" content="Every day, tens of thousands of refugees from 125 countries find safety in Poland." />
+      </Helmet>
       <GlobalStyle />
       <Layout pageTitle="Thank you Poland!">
         <Header></Header>

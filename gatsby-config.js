@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "http://demaskujemydezinformacje.pl",
-    title: "Demaskujemy Dezinformację",
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-react-helmet`]
 };
