@@ -65,7 +65,6 @@ const Widget = () => {
         return(
             <WidgetContainer>
                 <WidgetContent> 
-                    {!loadingState && <Spinner size="large"/>}
                     <Row>
                         <MentionsSection data = {data} onLoad={changeLoadingState}>
                             
@@ -78,7 +77,6 @@ const Widget = () => {
         return(
             <WidgetContainer>
                 <WidgetContent>
-                    {!loadingState && <Spinner size="large"/>}
                     <Row>
                         <MentionsSection data = {data.slice(0, data.length/3)} onLoad={changeLoadingState}>
                             
