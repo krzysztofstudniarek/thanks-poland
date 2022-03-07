@@ -19,12 +19,12 @@ const HeaderContentContainer = styled.div`
 
 const HeaderContentLeft = () => {
     const updateRefugeesNo = () => {
-        var baseNo = 550000;
+        var baseNo = 1000000;
         var now = moment(new Date());
-        var start = moment("2022-03-03");
+        var start = moment("2022-03-06");
         var duration = moment.duration(now.diff(start));
         
-        return baseNo + Math.floor(duration.asSeconds()*0.5);
+        return baseNo + Math.floor(duration.asSeconds());
     }
 
     const [refugeesNo, setRefugeesNo] = useState(() => updateRefugeesNo());
