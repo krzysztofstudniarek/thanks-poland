@@ -37,7 +37,7 @@ const HeaderContentLeft = () => {
 
     return(
         <HeaderContentContainer>
-            Millions of people from 125 countries have already found safety in Poland.
+            Millions of people from 125 countries fleeing war have already found safety in Poland
         </HeaderContentContainer>
     )
 }
