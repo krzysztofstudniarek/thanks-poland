@@ -24,7 +24,7 @@ const HeaderContentLeft = () => {
         var start = moment("2022-03-06");
         var duration = moment.duration(now.diff(start));
         
-        return baseNo + Math.floor(duration.asSeconds());
+        return baseNo + Math.floor(duration.asSeconds()*0.5);
     }
 
     const [refugeesNo, setRefugeesNo] = useState(() => updateRefugeesNo());
@@ -37,7 +37,7 @@ const HeaderContentLeft = () => {
 
     return(
         <HeaderContentContainer>
-            Over <b>{refugeesNo.toLocaleString()}</b> citizens from 125 countries have already found safety in Poland.
+            Millions of people from 125 countries have already found safety in Poland.
         </HeaderContentContainer>
     )
 }
